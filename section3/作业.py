@@ -22,6 +22,7 @@
 必须完成的功能：添加、删除、修改、查询、退出
 
 '''
+
 def main():
     while True:
         print('学生管理系统')
@@ -36,9 +37,7 @@ def main():
             print('成功退出')
             break
         elif num == '1':
-            print('='*30)
-            print('添加信息')
-            print('='*30)
+            def add()
         elif num == '2':
             print('='*30)
             print('修改信息')
@@ -53,3 +52,11 @@ def main():
             print('='*30)
 
 main()
+
+def add():
+    num =input('请输入学号')
+    name = input('请输入姓名')
+    age = input('请输入年龄')
+    performance = input('请输入成绩')
+    f = open('/message.txt','w+',encoding='utf-8')
+    f.close()
