@@ -50,14 +50,14 @@ print(a)
 程序运行后，除非选择退出系统，否则重复执行功能
 '''
 
-# while True:
-#     print('*'*30)
-#     print('添加名片（1）')
-#     print('删除名片（2）')
-#     print('修改名片（3）')
-#     print('查询名片（4）')
-#     print('退出系统（0）')
-#     print('*'*30)
-#     qiut = input('输入你要执行的操作：')
-#     if qiut == '0':
-#         break
+while True:
+    print('*'*30)
+    print('添加名片（1）')
+    print('删除名片（2）')
+    print('修改名片（3）')
+    print('查询名片（4）')
+    print('退出系统（0）')
+    print('*'*30)
+    qiut = input('输入你要执行的操作：')
+    if qiut == '0':
+        break
