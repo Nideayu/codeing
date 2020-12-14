@@ -3,13 +3,13 @@
 # .\\env \\scripts\\activate\\
 def save(student):
     try:
-        student_txt = open('filename','a')            # 以追加模式打开
+        student_txt = open('students.txt','a')            # 以追加模式打开
     except Exception as e:
-            student_txt = open('filename','w')        # 文件不存在，创建文件并打开
-            for info in student:
-                student_txt.write(str(info)+'\n')     # 按行存储，添加换行符
-            student_txt.close()  
-            
+            student_txt = open('students','w')        # 文件不存在，创建文件并打开
+    for info in student:
+        student_txt.write(str(info)+'\n')     # 按行存储，添加换行符
+    student_txt.close()  
+       
 def insert():
     studentList =[]                                     # 保存学生信息的列表
     mark = True                                         # 是否继续添加
@@ -115,7 +115,7 @@ def menu():
     4.修改学生信息
     5.排序
     6.统计学生总人数
-    7.显示所有学生信息
+    7.显示所有学生信息1
     0.退出系统
     
     ''')
@@ -129,7 +129,7 @@ def main():
     while (ctrl):                                            
         menu()                                              # 显示菜单
         option = input('请选择：')                           # 选择菜单项
-        option_str = re.sub('\D',option)                    # 提取数字
+        option_str = re.sub('\D','',option)                    # 提取数字
         if option_str in ['1','2','3','4','5','6','7']:      
             option_int = int(option_str)
             if option_int == 0:                             # 退出系统

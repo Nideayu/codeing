@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "D:\\envs\\flask_env\\Scripts\\python.exe"
+    "python.pythonPath": "D:\\envs\\flask_env\\Scripts\\python.exe",
+    "python.linting.enabled": false
 }
